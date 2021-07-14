@@ -13,3 +13,8 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+/public/bower_components
+/bootstrap
+/public/js/template.js
+/public/js/app.js
+/public/css

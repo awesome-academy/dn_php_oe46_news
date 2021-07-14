@@ -1,0 +1,23 @@
+{
+  "name": "Footballnews",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Toan <tin4101999@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/toan4101999/dn_php_oe46_news",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "bootstrap": "^5.0.2",
+    "components-font-awesome": "^5.15.3"
+  }
+}
