@@ -13,11 +13,12 @@ class Team extends Model
     protected $fillable = [
         'name',
         'country',
+        'cate_id',
     ];
     
     public function category()
     {
-        return $this->belongsTo(Categorypost::class);
+        return $this->belongsTo(Categorypost::class, 'cate_id');
     }
     
     public function players()

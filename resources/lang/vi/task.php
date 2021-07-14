@@ -61,4 +61,11 @@ return [
     'detailprofile' => 'Chi tiết hồ sơ',
     'editprofile' => 'Chỉnh sửa hồ sơ',
     'delete1' => 'Xóa thành công',
+    'postby' => 'Đăng bởi',
+    'update1' => 'Update thành công',
+    'teamtable' => 'Bảng đội tuyển',
+    'addteam' => "Thêm đội mới",
+    'country' => "Quốc Gia",
+    'team' => 'Đội bóng',
+    'teamname' => "Tên đội bóng",
 ];

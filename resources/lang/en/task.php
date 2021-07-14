@@ -65,5 +65,12 @@ return [
     'avatar' => 'Avatar',
     'deleteavatar' => 'Delete Avatar',
     'changeavatar' => 'Change Avatar',
-    'delete1' => 'Deletesuccess',
+    'delete1' => 'Delete success',
+    'postby' => 'Posted by',
+    'update1' => 'Update success',
+    'teamtable' => 'TeamTable',
+    'addteam' => "Add New Team",
+    'country' => "Country",
+    'team' => 'Team',
+    'teamname' => "Team Name",
 ];

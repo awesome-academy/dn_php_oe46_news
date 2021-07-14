@@ -113,7 +113,6 @@ class CategoryController extends Controller
         } catch (Exception $ex) {
             DB::rollback();
             session()->flash('error', $ex->getMessage());
-
             return redirect()->back();
         }
     }

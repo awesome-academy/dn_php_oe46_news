@@ -13,11 +13,11 @@ class Post extends Model
 
     protected $fillable = [
         'title',
+        'body',
         'img',
         'slug',
         'exceprt',
         'content_type',
-        'body',
         'cate_id',
         'user_id',
     ];
@@ -29,7 +29,7 @@ class Post extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 
     public function comments()
