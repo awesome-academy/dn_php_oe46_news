@@ -18,11 +18,13 @@ class Post extends Model
         'exceprt',
         'content_type',
         'body',
+        'cate_id',
+        'user_id',
     ];
     
     public function category()
     {
-        return $this->belongsTo(Categorypost::class);
+        return $this->belongsTo(Categorypost::class, 'cate_id');
     }
 
     public function user()
