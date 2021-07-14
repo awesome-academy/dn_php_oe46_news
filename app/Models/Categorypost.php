@@ -17,7 +17,7 @@ class Categorypost extends Model
 
     public function posts()
     {
-        return $this->hasMany(Post::class);
+        return $this->hasMany(Post::class, 'cate_id');
     }
 
     public function teams()

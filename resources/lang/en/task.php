@@ -65,4 +65,5 @@ return [
     'avatar' => 'Avatar',
     'deleteavatar' => 'Delete Avatar',
     'changeavatar' => 'Change Avatar',
+    'delete1' => 'Deletesuccess',
 ];

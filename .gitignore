@@ -17,4 +17,7 @@ yarn-error.log
 /bootstrap
 /public/js/template.js
 /public/js/app.js
+<<<<<<< HEAD
 /public/css
+=======
+>>>>>>> 4719fe7 (Manage Category)
