@@ -60,4 +60,5 @@ return [
     'profile' => 'Hồ sơ của tối',
     'detailprofile' => 'Chi tiết hồ sơ',
     'editprofile' => 'Chỉnh sửa hồ sơ',
+    'delete1' => 'Xóa thành công',
 ];

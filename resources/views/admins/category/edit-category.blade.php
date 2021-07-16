@@ -22,13 +22,14 @@
             </div>
 
             <div class="card-body">
-
-                <form>
+               
+                <form action="{{route('categories.update',['category' => $category->id])}}" method="POST">
+                    @csrf
+                    @method('PUT')
                     <div class="form-group">
                         <label for="exampleInputEmail1">@lang('task.Categoryname')</label>
-                        <input type="text" class="form-control" id="" aria-describedby=""
+                        <input type="text" name="name" value="{{$category->name}}"class="form-control" id="" aria-describedby=""
                             placeholder="Enter category name" required>
-
                     </div>
                     <button type="submit" class="btn btn-primary">@lang('task.update')</button>
                 </form>
@@ -41,8 +42,11 @@
     </div>
 
 </div>
+
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
 <script src="bower_componets/bootstrap/dist/js/bootstrap.min.js"></script>
+
 <script src="js/template.js"></script>
 
 </div>

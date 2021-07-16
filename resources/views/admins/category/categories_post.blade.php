@@ -27,11 +27,22 @@
                     <div class="card mb-3">
                         <div class="card-header">
                             <h3><i class="fas fa-table"></i>@lang('Categorytable')</h3>
-                            <span class="pull-right"><a href="" class="btn btn-primary btn-sm"><i class="fas fa-plus"
+                            <span class="pull-right"><a href="{{route('categories.create')}}"
+                                    class="btn btn-primary btn-sm"><i class="fas fa-plus"
                                         aria-hidden="true"></i>@lang('task.Addnewcategory')</a></span>
 
                         </div>
+                        @if (session('error'))
+                        <div class="alert alert-danger" role="alert">
+                            {{ session('error') }}
+                        </div>
+                        @endif
 
+                        @if (session('success'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('success') }}
+                        </div>
+                        @endif
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table id="dataTable" class="table table-bordered table-hover display">
@@ -43,16 +54,24 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach ($categories as $category)
                                         <tr>
-                                            <th></th>
-                                            <th></th>
+                                            <th>{{$category->id}}</th>
+                                            <th>{{$category->name}}</th>
                                             <th>
-                                                <a href="" class="btn btn-primary btn-sm btn-block"><i
-                                                        class="far fa-edit"></i>@lang('edit')</a>
-                                                <a href="#" class="btn btn-danger btn-sm btn-block mt-2"><i
-                                                        class="fas fa-trash"></i>@lang('delete')</a>
+                                                <form
+                                                    action="{{route('categories.destroy',['category' => $category->id])}}"
+                                                    method="post">
+                                                    <a href="{{ route('categories.edit',['category' => $category->id]) }}"
+                                                        class="btn btn-primary btn-sm btn-block"><i
+                                                            class="far fa-edit"></i>@lang('edit')</a>
+                                                    @method('DELETE')
+                                                    @csrf
+                                                    <button type="submit" class="btn btn-danger">DELETE</button>
+                                                </form>
                                             </th>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>
@@ -72,7 +91,9 @@
 </div>
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_componets/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
 <script src="js/template.js"></script>
 
 </div>

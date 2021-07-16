@@ -6,6 +6,7 @@
     <div class="content">
 
         <div class="container-fluid">
+
             <div class="row">
                 <div class="col-xl-12">
                     <div class="breadcrumb-holder">
@@ -22,11 +23,12 @@
 
             <div class="card-body">
 
-                <form>
+                <form action="{{route('categories.store')}}" method="POST">
+                    @csrf
                     <div class="form-group">
                         <label for="exampleInputEmail1">@lang('Categoryname')</label>
-                        <input type="text" class="form-control" id="" aria-describedby=""
-                            placeholder="Enter category name" required>
+                        <input type="text"  name='name' class="form-control" id="" aria-describedby=""
+                            placeholder="Enter category name">
 
                     </div>
                     <button type="submit" class="btn btn-primary">@lang('Add')</button>
@@ -34,18 +36,15 @@
 
             </div>
 
-
         </div>
 
     </div>
 
 </div>
 
-
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
 <script src="bower_componets/bootstrap/dist/js/bootstrap.min.js"></script>
-
 
 <script src="js/template.js"></script>
 
@@ -54,5 +53,4 @@
 </body>
 
 </html>
-
 @endsection
