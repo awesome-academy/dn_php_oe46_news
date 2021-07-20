@@ -80,16 +80,23 @@
                         </li>
 
                         <li class="submenu">
-                            <a href="">
+                            <a href="{{route('posts.index')}}">
                                 <i class="fas fa-file-alt"></i>
                                 <span>@lang('task.post')</span>
                             </a>
                         </li>
 
                         <li class="submenu">
-                            <a id="tables" href="">
+                            <a id="tables" href="{{route('categories.index')}}">
                                 <i class="fas fa-table"></i>
                                 <span>@lang('task.Categorypost')</span>
+                            </a>
+                        </li>
+
+                        <li class="submenu">
+                            <a id="tables" href="{{route('teams.index')}}">
+                                <i class="fas fa-table"></i>
+                                <span>@lang('task.team')</span>
                             </a>
                         </li>
 

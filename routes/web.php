@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\TeamController;
 use App\Http\Controllers\CategoryController;
 
 /*
@@ -23,6 +25,8 @@ Auth::routes();
 
 Route::group(['prefix' => 'admin'], function () {
     Route::resource('categories', CategoryController::class);
+    Route::resource('posts', PostController::class);
+    Route::resource('teams', TeamController::class);
 });
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('home', function () {
