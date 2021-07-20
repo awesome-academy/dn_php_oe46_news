@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\BodyController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,10 +26,15 @@ Auth::routes();
 Route::group(['prefix' => 'admin'], function () {
     Route::resource('categories', CategoryController::class);
 });
+Route::resource('posts', PostController::class);
+
+Route::resource('blogdetail', BodyController::class);
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('home', function () {
+
+Route::get('index', function () {
     return view('page.user.home');
-})->name('home');
+})->name('index');
 Route::get('tem', function () {
     return view('page.user.tem');
 })->name('tem');

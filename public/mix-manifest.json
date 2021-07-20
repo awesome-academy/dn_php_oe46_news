@@ -2,7 +2,12 @@
     "/js/app.js": "/js/app.js",
     "/js/template.js": "/js/template.js",
     "/css/app.css": "/css/app.css",
+<<<<<<< HEAD
     "/css/style.css": "/css/style.css",
+=======
+    "/css/style.css": "/css/style.css"
+
+>>>>>>> 05c42d3 (add showNews)
     "/css/app.css": "/css/app.css",
     "/css/animate.css": "/css/animate.css",
     "/css/bootstrap.min.css": "/css/bootstrap.min.css",
@@ -18,8 +23,13 @@
     "/css/prettyPhoto.css": "/css/prettyPhoto.css",
     "/css/responsive.css": "/css/responsive.css",
     "/css/swiper.min.css": "/css/swiper.min.css",
+<<<<<<< HEAD
     "/css/transitions.css": "/css/transitions.css",
     "/js/template.js": "/js/template.js",
     "/css/app.css": "/css/app.css",
     "/css/style.css": "/css/style.css"
+=======
+    "/css/transitions.css": "/css/transitions.css"
+
+>>>>>>> 05c42d3 (add showNews)
 }
